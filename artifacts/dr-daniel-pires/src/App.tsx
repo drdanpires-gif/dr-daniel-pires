@@ -130,7 +130,7 @@ export default function App() {
             >
               <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-200/50 border-8 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1612277795421-9bc7706a4a41?q=80&w=1200&auto=format&fit=crop" 
+                  src="/drdanielpires.jpg" 
                   alt="Dr. Daniel Pires" 
                   className="object-cover w-full h-full"
                 />
