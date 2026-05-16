@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Dr. Daniel Pires"
+version = "1.0.0"
+id = "artifacts/dr-daniel-pires"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21832
+
+[services.development]
+run = "pnpm --filter @workspace/dr-daniel-pires run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/dr-daniel-pires", "run", "build" ]
+publicDir = "artifacts/dr-daniel-pires/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21832"
+BASE_PATH = "/"

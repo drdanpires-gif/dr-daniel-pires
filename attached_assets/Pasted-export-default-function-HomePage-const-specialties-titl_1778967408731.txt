@@ -1,0 +1,339 @@
+export default function HomePage() {
+  const specialties = [
+    {
+      title: "Artrose do Quadril",
+      description:
+        "Tratamentos modernos para reduzir dor, preservar mobilidade e recuperar qualidade de vida.",
+    },
+    {
+      title: "Prótese de Quadril",
+      description:
+        "Cirurgia com abordagem moderna para devolver movimento e conforto ao paciente.",
+    },
+    {
+      title: "Impacto Femoroacetabular",
+      description:
+        "Diagnóstico preciso e tratamento especializado para dor e limitação do quadril.",
+    },
+    {
+      title: "Lesões e Dor no Quadril",
+      description:
+        "Avaliação individualizada para dor, instabilidade e limitações funcionais.",
+    },
+  ];
+
+  const pains = [
+    "Dor ao caminhar ou subir escadas",
+    "Limitação de movimento",
+    "Desconforto constante",
+    "Medo de perder qualidade de vida",
+  ];
+
+  const process = [
+    "Avaliação individualizada",
+    "Diagnóstico preciso",
+    "Planejamento do tratamento",
+    "Recuperação acompanhada",
+  ];
+
+  return (
+    <main className="min-h-screen bg-white text-slate-800">
+      {/* Header */}
+      <header className="fixed top-0 z-50 w-full border-b border-slate-200 bg-white/90 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+          <div>
+            <h1 className="text-xl font-bold text-slate-900">
+              Dr. Daniel Pires
+            </h1>
+            <p className="text-sm text-slate-500">
+              Ortopedia • Especialista em Quadril
+            </p>
+          </div>
+
+          <nav className="hidden items-center gap-8 md:flex">
+            <a href="#inicio" className="hover:text-blue-600">
+              Início
+            </a>
+            <a href="#especialidades" className="hover:text-blue-600">
+              Especialidades
+            </a>
+            <a href="#sobre" className="hover:text-blue-600">
+              Sobre
+            </a>
+            <a href="#contato" className="hover:text-blue-600">
+              Contato
+            </a>
+          </nav>
+
+          <a
+            href="https://wa.me/5500000000000"
+            className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+          >
+            Agendar Consulta
+          </a>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section
+        id="inicio"
+        className="relative overflow-hidden px-6 pb-24 pt-40"
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white" />
+
+        <div className="relative mx-auto grid max-w-7xl items-center gap-20 lg:grid-cols-2">
+          <div>
+            <div className="mb-6 inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm text-blue-700">
+              Especialista em Quadril • Jundiaí/SP
+            </div>
+
+            <h2 className="max-w-3xl text-5xl font-bold leading-tight text-slate-900 md:text-7xl">
+              Volte a se movimentar sem dor.
+            </h2>
+
+            <p className="mt-8 max-w-2xl text-xl leading-relaxed text-slate-600">
+              Tratamentos modernos para quadril com foco em mobilidade,
+              recuperação segura e qualidade de vida.
+            </p>
+
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="https://wa.me/5500000000000"
+                className="rounded-full bg-slate-900 px-8 py-5 text-center text-lg font-semibold text-white transition hover:bg-blue-700"
+              >
+                Agendar Avaliação
+              </a>
+
+              <a
+                href="#especialidades"
+                className="rounded-full border border-slate-300 bg-white px-8 py-5 text-center text-lg font-semibold text-slate-700 transition hover:border-blue-600 hover:text-blue-600"
+              >
+                Conhecer Tratamentos
+              </a>
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-4 text-sm text-slate-500">
+              <span>CRM-SP XXXXX</span>
+              <span>•</span>
+              <span>Atendimento Particular</span>
+              <span>•</span>
+              <span>Jundiaí/SP</span>
+            </div>
+          </div>
+
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="absolute h-96 w-96 rounded-full bg-blue-100 blur-3xl" />
+
+            <img
+              src="https://images.unsplash.com/photo-1612277795421-9bc7706a4a41?q=80&w=1200&auto=format&fit=crop"
+              alt="Dr. Daniel Pires"
+              className="relative z-10 h-[700px] w-full max-w-lg rounded-[40px] object-cover shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Pain Section */}
+      <section className="bg-slate-900 py-24 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="max-w-3xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-400">
+              Você se identifica?
+            </p>
+
+            <h3 className="text-4xl font-bold leading-tight md:text-5xl">
+              A dor no quadril não afeta apenas o movimento.
+            </h3>
+
+            <p className="mt-6 text-xl text-slate-300">
+              Ela impacta sua rotina, independência, sono e qualidade de vida.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {pains.map((item) => (
+              <div
+                key={item}
+                className="rounded-3xl border border-slate-800 bg-slate-800/50 p-8"
+              >
+                <div className="mb-6 h-14 w-14 rounded-2xl bg-blue-500/20" />
+                <p className="text-lg font-medium leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Specialties */}
+      <section
+        id="especialidades"
+        className="mx-auto max-w-7xl px-6 py-28"
+      >
+        <div className="mb-16 text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+            Especialidades
+          </p>
+
+          <h3 className="text-4xl font-bold text-slate-900 md:text-5xl">
+            Tratamentos modernos para recuperar mobilidade e conforto
+          </h3>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {specialties.map((specialty) => (
+            <div
+              key={specialty.title}
+              className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="mb-6 h-14 w-14 rounded-2xl bg-blue-50" />
+
+              <h4 className="text-2xl font-semibold text-slate-900">
+                {specialty.title}
+              </h4>
+
+              <p className="mt-5 leading-relaxed text-slate-600">
+                {specialty.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="bg-slate-50 py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-20 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+              Método de Atendimento
+            </p>
+
+            <h3 className="text-4xl font-bold text-slate-900 md:text-5xl">
+              Atendimento focado em segurança e recuperação eficiente
+            </h3>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {process.map((item, index) => (
+              <div
+                key={item}
+                className="rounded-[32px] bg-white p-10 shadow-sm"
+              >
+                <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-slate-900 text-2xl font-bold text-white">
+                  {index + 1}
+                </div>
+
+                <h4 className="text-2xl font-semibold text-slate-900">
+                  {item}
+                </h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="sobre" className="bg-white py-28">
+        <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop"
+              alt="Consultório"
+              className="rounded-[40px] shadow-2xl"
+            />
+          </div>
+
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+              Sobre o Médico
+            </p>
+
+            <h3 className="text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
+              Atendimento próximo, moderno e focado em qualidade de vida
+            </h3>
+
+            <p className="mt-8 text-xl leading-relaxed text-slate-600">
+              Dr. Daniel Pires atua com foco em ortopedia e tratamentos do
+              quadril, utilizando abordagens modernas para proporcionar mais
+              conforto, mobilidade e segurança aos pacientes.
+            </p>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-2">
+              {[
+                "Atendimento humanizado",
+                "Técnicas modernas",
+                "Tratamento individualizado",
+                "Recuperação acompanhada",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
+                >
+                  <p className="font-medium text-slate-700">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section
+        id="contato"
+        className="mx-6 mb-10 overflow-hidden rounded-[48px] bg-gradient-to-r from-slate-900 to-blue-800 px-8 py-24 text-white lg:px-20"
+      >
+        <div className="mx-auto max-w-5xl text-center">
+          <h3 className="text-5xl font-bold leading-tight md:text-6xl">
+            Agende sua avaliação
+          </h3>
+
+          <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-slate-200">
+            Atendimento especializado em quadril com foco em recuperação,
+            mobilidade e qualidade de vida.
+          </p>
+
+          <div className="mt-12 flex flex-col justify-center gap-5 sm:flex-row">
+            <a
+              href="https://wa.me/5500000000000"
+              className="rounded-full bg-white px-10 py-5 text-lg font-bold text-slate-900 transition hover:scale-105"
+            >
+              Falar no WhatsApp
+            </a>
+
+            <a
+              href="https://maps.google.com"
+              className="rounded-full border border-white/30 px-10 py-5 text-lg font-semibold text-white transition hover:bg-white/10"
+            >
+              Ver localização
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-200 bg-white py-10">
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h4 className="text-xl font-bold text-slate-900">
+              Dr. Daniel Pires
+            </h4>
+            <p className="mt-2 text-slate-500">
+              Ortopedia • Especialista em Quadril
+            </p>
+          </div>
+
+          <div className="text-sm text-slate-500">
+            © 2026 Dr. Daniel Pires — Todos os direitos reservados.
+          </div>
+        </div>
+      </footer>
+
+      {/* Floating WhatsApp */}
+      <a
+        href="https://wa.me/5500000000000"
+        className="fixed bottom-6 right-6 rounded-full bg-green-500 px-7 py-4 text-sm font-bold text-white shadow-2xl transition hover:scale-105"
+      >
+        WhatsApp
+      </a>
+    </main>
+  );
+}
