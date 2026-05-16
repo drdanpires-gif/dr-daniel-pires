@@ -319,8 +319,8 @@ export default function App() {
             >
               <div className="aspect-[4/3] lg:aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1200&auto=format&fit=crop" 
-                  alt="Raio-X de quadril" 
+                  src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Centro cirúrgico moderno" 
                   className="object-cover w-full h-full"
                 />
               </div>
