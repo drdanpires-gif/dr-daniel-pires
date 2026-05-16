@@ -128,7 +128,7 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex-1 relative w-full max-w-md lg:max-w-none"
             >
-              <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-200/50 border-8 border-white">
+              <div className="relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-200/50 border-8 border-white">
                 <img 
                   src="/drdanielpires.jpg" 
                   alt="Dr. Daniel Pires" 
@@ -317,7 +317,7 @@ export default function App() {
               transition={{ duration: 0.6 }}
               className="flex-1 relative w-full"
             >
-              <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="/dr_cirurgia.jpg"
                   alt="Dr. Daniel Pires em cirurgia"
