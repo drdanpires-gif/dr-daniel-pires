@@ -308,14 +308,30 @@ export default function App() {
 
       {/* About */}
       <section id="sobre" className="py-24 relative overflow-hidden">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="flex flex-col">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="w-full"
+              className="flex-1 relative w-full"
+            >
+              <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                <img
+                  src="/dr_cirurgia.jpg"
+                  alt="Dr. Daniel Pires em cirurgia"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="flex-1"
             >
               <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Sobre o Doutor</span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Dr. Daniel Pires</h2>
