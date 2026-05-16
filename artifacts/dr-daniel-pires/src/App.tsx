@@ -371,7 +371,7 @@ export default function App() {
                   Agende sua avaliação
                 </Button>
               </a>
-              <a href="https://maps.google.com/?q=Jundiai,SP" target="_blank" rel="noreferrer" className="w-full sm:w-auto">
+              <a href="https://maps.app.goo.gl/2UMorUFmDM36xH7W7" target="_blank" rel="noreferrer" className="w-full sm:w-auto">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-full text-base font-medium border-slate-700 bg-slate-800/50 hover:bg-slate-800 text-white h-14 px-8 gap-2">
                   <MapPin className="w-4 h-4 text-slate-300" />
                   Ver localização
