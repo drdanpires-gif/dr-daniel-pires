@@ -370,6 +370,58 @@ export default function App() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold tracking-widest uppercase text-primary mb-3">Depoimentos</p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900">O que dizem nossos pacientes</h2>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              {
+                name: "Maria Aparecida S.",
+                context: "Prótese de quadril",
+                text: "Depois de anos sofrendo com dor constante, o Dr. Daniel devolveu minha mobilidade. Hoje caminho sem limitações — algo que achei que nunca voltaria a fazer.",
+              },
+              {
+                name: "José Roberto M.",
+                context: "Artrose do quadril",
+                text: "Atendimento humanizado desde a primeira consulta. Ele explicou tudo com clareza e me deu segurança para tomar a decisão certa. O resultado superou as expectativas.",
+              },
+              {
+                name: "Claudia F.",
+                context: "Impacto femoroacetabular",
+                text: "Finalmente um médico que ouviu minha queixa com atenção. Diagnóstico preciso e acompanhamento cuidadoso. Em poucos meses voltei a praticar atividade física.",
+              },
+            ].map((t, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.12 }}
+                className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 flex flex-col gap-6"
+              >
+                <div className="flex gap-1">
+                  {Array.from({ length: 5 }).map((_, s) => (
+                    <svg key={s} className="w-4 h-4 fill-amber-400 text-amber-400" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-slate-600 leading-relaxed flex-1">"{t.text}"</p>
+                <div>
+                  <p className="font-semibold text-slate-900">{t.name}</p>
+                  <p className="text-sm text-primary">{t.context}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section id="contato" className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-slate-900"></div>
