@@ -309,29 +309,34 @@ export default function App() {
               className="flex-1"
             >
               <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Sobre o Doutor</span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">Dr. Daniel Pires</h2>
-              <div className="prose prose-slate prose-lg text-slate-600 mb-8">
-                <p>
-                  Com anos de dedicação exclusiva ao tratamento de afecções do quadril, 
-                  minha missão é aliar a precisão técnica da medicina moderna ao acolhimento humano 
-                  que todo paciente merece.
-                </p>
-                <p>
-                  Acredito que o tratamento cirúrgico ou conservador não é o fim da linha, mas 
-                  o começo de uma nova fase da vida, com mais movimento e menos limitações.
-                </p>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Dr. Daniel Pires</h2>
+
+              <p className="text-slate-500 text-lg mb-8">
+                Com mais de <strong className="text-slate-700 font-semibold">1.500 cirurgias de quadril</strong> realizadas desde 2019, une precisão técnica e atendimento humanizado para devolver mobilidade e qualidade de vida aos seus pacientes.
+              </p>
+
+              <div className="space-y-3 mb-8">
+                {[
+                  { year: "2013", text: "Graduação em Medicina — Universidade Anhembi Morumbi" },
+                  { year: "2018", text: "Especialização em Ortopedia e Traumatologia — Santa Casa de Santos" },
+                  { year: "2019", text: "Especialista em Cirurgia do Quadril — Santa Casa de Santos" },
+                  { year: "2019–", text: "Cirurgião de quadril no Hospital Municipal de Cubatão" },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4 items-start">
+                    <span className="text-xs font-bold text-primary bg-blue-50 border border-blue-100 rounded-full px-2.5 py-1 mt-0.5 shrink-0 min-w-[48px] text-center">{item.year}</span>
+                    <p className="text-slate-600 text-sm leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-3">
                 {[
-                  "Atendimento humanizado",
-                  "Técnicas modernas",
-                  "Tratamento individualizado",
-                  "Recuperação acompanhada"
-                ].map((badge, i) => (
-                  <div key={i} className="flex items-center gap-2 text-sm font-medium text-slate-800 bg-slate-50 py-3 px-4 rounded-xl border border-slate-100">
-                    <Check className="w-4 h-4 text-primary shrink-0" />
-                    <span>{badge}</span>
+                  "Chefe do serviço de ortopedia — Hospital Beneficência Portuguesa, Santos",
+                  "Membro e coordenador — Sociedade Brasileira de Ortopedia e Traumatologia",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-2 text-sm text-slate-700 bg-slate-50 py-3 px-4 rounded-xl border border-slate-100">
+                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{item}</span>
                   </div>
                 ))}
               </div>
