@@ -117,7 +117,7 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-md shadow-sm border border-slate-100">
                   <MapPin className="w-4 h-4 text-primary" />
-                  Jundiaí/SP
+                  Santos/SP
                 </div>
               </div>
             </motion.div>
