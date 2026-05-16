@@ -128,11 +128,11 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex-1 relative w-full max-w-md lg:max-w-none"
             >
-              <div className="relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-200/50 border-8 border-white">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-200/50 border-8 border-white bg-slate-50">
                 <img 
                   src="/drdanielpires.jpg" 
                   alt="Dr. Daniel Pires" 
-                  className="object-cover w-full h-full"
+                  className="object-contain w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent"></div>
               </div>
@@ -315,9 +315,9 @@ export default function App() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex-1 relative w-full"
+              className="w-full lg:w-5/12 shrink-0 relative"
             >
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl max-w-xs mx-auto lg:mx-0">
                 <img
                   src="/dr_cirurgia.jpg"
                   alt="Dr. Daniel Pires em cirurgia"
