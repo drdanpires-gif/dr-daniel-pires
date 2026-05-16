@@ -109,7 +109,7 @@ export default function App() {
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 md:gap-6 text-sm text-slate-500 font-medium">
                 <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-md shadow-sm border border-slate-100">
                   <Check className="w-4 h-4 text-primary" />
-                  CRM-SP 123456
+                  CRM-SP 161894 | RQE 80039
                 </div>
                 <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-md shadow-sm border border-slate-100">
                   <Check className="w-4 h-4 text-primary" />
