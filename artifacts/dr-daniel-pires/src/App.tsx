@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronRight, MessageCircle, MapPin, Check, Stethoscope, Activity, HeartPulse, UserCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const WHATSAPP_LINK = "https://wa.me/5500000000000";
+const WHATSAPP_LINK = "https://wa.me/5513991455678";
 
 const smoothScroll = (id: string) => {
   const element = document.getElementById(id);
