@@ -157,6 +157,31 @@ export default function App() {
         </div>
       </section>
 
+      {/* Stats Bar */}
+      <section className="py-12 bg-white border-y border-slate-100">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              { value: "+1.500", label: "Cirurgias realizadas" },
+              { value: "+7", label: "Anos de experiência" },
+              { value: "2", label: "Hospitais de atuação" },
+              { value: "100%", label: "Foco no quadril" },
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+              >
+                <p className="text-4xl md:text-5xl font-serif font-bold text-primary">{stat.value}</p>
+                <p className="mt-1 text-sm text-slate-500 font-medium">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pain Points Section */}
       <section className="py-20 bg-slate-900 text-white relative">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -332,7 +357,7 @@ export default function App() {
               <div className="grid grid-cols-1 gap-3">
                 {[
                   "Chefe do serviço de ortopedia — Hospital Beneficência Portuguesa, Santos",
-                  "Membro e coordenador — Sociedade Brasileira de Ortopedia e Traumatologia",
+                  "Membro — Sociedade Brasileira de Ortopedia e Traumatologia",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-2 text-sm text-slate-700 bg-slate-50 py-3 px-4 rounded-xl border border-slate-100">
                     <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
