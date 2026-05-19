@@ -40,6 +40,11 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 _Populate as you build — sharp edges, "always run X before Y" rules._
 
+## GitHub Repository
+
+- Remote: https://github.com/drdanpires-gif/dr-daniel-pires
+- To push: `git push github main` (authenticate via Replit GitHub integration)
+
 ## Pointers
 
 - See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
