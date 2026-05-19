@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "FJKln_EqlCTT5ApcoirNb"
+uri = "file://dr-daniel-pires.tar.gz"
+type = "unspecified"
+title = "dr-daniel-pires.tar.gz"
